@@ -1,0 +1,7 @@
+const int MAIN_COLOR = 0xFF02C1D5;
+const int MAINDARKCOLOR = 0xFFea5c44;
+const int SECONDCOLOR = 0xFF344968;
+const int SECONDDARKCOLOR = 0xFFccccdd;
+const int ACCENTCOLOR = 0xFF8C98A8;
+const int ACCENTDARKCOLOR = 0xFF9999aa;
+const int SCAFFOLDCOLOR = 0xFFFAFAFA;
