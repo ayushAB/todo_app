@@ -46,6 +46,20 @@ class _LoginState extends State<Login> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
+            // Image.network(
+            //   "https://image.freepik.com/free-vector/flat-design-laptop-logo-template_23-2148995176.jpg",
+            //   width: 150,
+            //   height: 150,
+            // ),
+            Container(
+              child: Text(
+                "Todo's",
+                style: TextStyle(fontSize: 48, color: Colors.black45),
+              ),
+            ),
+            Container(
+              height: 50,
+            ),
             Padding(
               padding:
                   const EdgeInsets.only(left: 15, right: 15, top: 0, bottom: 8),
@@ -107,13 +121,13 @@ class _LoginState extends State<Login> {
                 ],
               ),
             ),
-            TextButton(
-              style: TextButton.styleFrom(
-                textStyle: const TextStyle(fontSize: 14),
-              ),
-              onPressed: () => {Navigator.pushNamed(context, '/resetpassword')},
-              child: const Text('FORGOT PASSWORD?'),
-            ),
+            // TextButton(
+            //   style: TextButton.styleFrom(
+            //     textStyle: const TextStyle(fontSize: 14),
+            //   ),
+            //   onPressed: () => {Navigator.pushNamed(context, '/resetpassword')},
+            //   child: const Text('FORGOT PASSWORD?'),
+            // ),
             BlocBuilder<AuthCubit, AuthState>(
               builder: (context, state) {
                 if (state is LogingIn)
